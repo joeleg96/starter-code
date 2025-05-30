@@ -1,0 +1,570 @@
+:root {
+    /* Colors */
+    --white: #FFFFFF;
+    --black: #000000;
+    --grey-500: #5E6E85;
+    --grey-300: #ACC1DE;
+    --blue-900: #253347;
+    --blue-500: #345FF6;
+    --blue-300: #B3D3F1;
+    --blue-100: #E1E7FE;
+}
+
+.tp1 {
+    font-size: 4rem;
+    line-height: 110%;
+    letter-spacing: -5%;
+}
+
+.tp2 {
+    font-size: 3rem;
+    line-height: 110%;
+    letter-spacing: -5%;
+}
+
+.tp3 {
+    font-size: 2rem;
+    line-height: 110%;
+    letter-spacing: -5%;
+}
+
+.tp4 {
+    font-size: 1.5rem;
+    line-height: 120%;
+    letter-spacing: -5%;
+}
+
+.tp5 {
+    font-size: 1.25rem;
+    line-height: 120%;
+    letter-spacing: -5%;
+}
+
+.tp6 {
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.tp7 {
+    font-size: .875rem;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+* {
+    font-family: "Inter";
+}
+
+body {
+    margin: 0;
+}
+
+.hero-container {
+    width: 100%;
+    height: min-content;
+    background: #FFFFFF;
+    background: linear-gradient(130deg, rgba(255, 255, 255, 1) 0%, rgba(214, 252, 254, 1) 58%, rgba(214, 230, 254, 1) 100%);
+}
+
+.header {
+    width: 20.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-container {
+    width: 20.5rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-title {
+    text-align: center;
+    margin: 0;
+}
+
+.hero-text {
+    text-align: center;
+    color: var(--grey-500);
+
+}
+
+.calculator-container {
+    width: 20.5rem;
+    height: min-content;
+    background-color: var(--white);
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: .825rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.enter-details {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.enter-details-title {
+    text-align: center;
+}
+
+.radio-btn-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.radio-label {
+    font-weight: 600;
+}
+
+.metric-container, .imperial-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.metric-container {
+    margin-left: -5rem;
+}
+
+.imperial-container {
+    margin-right: -5rem;
+}
+
+input {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: .75rem;
+}
+
+.user-input, .user-input-2 {
+    position: relative;
+    display: block;
+    width: 17.5rem;
+    height: 4.8125rem;
+    border: 1px solid var(--grey-300);
+    border-radius: .825rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.height-label, .weight-label {
+    margin-left: 1.5rem;
+    color: var(--grey-500);
+}
+
+.user-input::before {
+    color: var(--blue-500);
+    font-weight: 700;
+    content: "cm";
+    position: absolute;
+    z-index: 99;
+    top: 30%;
+    right: 10%;
+}
+
+.user-input-2::before {
+    color: var(--blue-500);
+    font-weight: 700;
+    content: "kg";
+    position: absolute;
+    z-index: 99;
+    top: 30%;
+    right: 10%;
+}
+
+textarea {
+    color: var(--grey-500);
+    font-weight: 600;
+    resize: none;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.25rem;
+}
+
+.welcome-container {
+    width: 17.5rem;
+    background-color: var(--blue-500);
+    margin-top: 1.5rem;
+    border-radius: .825rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.welcome-header {
+    color: var(--white);
+    font-weight: 500;
+    margin-left: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.welcome-text {
+    color: var(--white);
+    margin-left: 1.5rem;
+    margin-right: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.result-container {
+    margin-top: 3rem;
+}
+
+.left-flex {
+    width: 23.4375rem;
+    height: 22.15rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.man-eating-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-flex {
+    width: 20.5rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.results-title {
+    font-weight: 600;
+}
+
+.results-description {
+    color: var(--grey-500);
+}
+
+.tips-container {
+    background: #D6FCFE;
+    background: linear-gradient(130deg, rgba(214, 252, 254, 0.49) 0%, rgba(214, 230, 254, 1) 100%);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.tip-tile {
+    width: 20.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.exercise-container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.tile-text {
+    color: var(--grey-500);
+}
+
+.limitations-container {
+    margin-top: 5rem;
+}
+
+.limitations-tile {
+    width: 20.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 26px 18px 159px -68px rgba(0,0,0,0.75);
+    border-radius: .825rem;
+}
+
+.limitations-title {
+    text-align: center;
+    color: var(--blue-900);
+}
+
+.limitations-description {
+    color: var(--grey-500);
+    text-align: center;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.tile-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: .5rem;
+}
+
+.tile-icon {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.limitations-tile-text {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: var(--grey-500);
+}
+
+@media screen and (min-width: 875px) {
+    .header {
+        width: 42.875rem;
+    }
+
+    .hero-title {
+        width: 31rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .calculator-container {
+        width: 42.875rem;
+    }
+
+    .enter-details-title {
+        text-align: left;
+        padding-left: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .radio-btn-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr .8fr;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .metric-container {
+        margin-left: -7rem;
+    }
+        
+   .textarea-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+   }
+
+   .height-label, .weight-label {
+        margin: 0;
+        margin-bottom: 1rem;
+   }
+    
+   .welcome-container {
+        width: 38.875rem;
+        border-top-right-radius: 5rem;
+        border-bottom-right-radius: 5rem;
+   }
+
+   .result-container {
+        width: 52.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 4.5rem;
+        align-items:start;
+        margin-left: auto;
+        margin-right: auto;
+   }
+
+   .left-flex {
+        width:27.1875rem;
+        height: 25.6875rem;
+        margin: 0;
+   }
+
+   .tip-tile {
+        width: 42.875rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+   }
+
+   .tips-img-container {
+        margin-right: 2.5rem;
+   }
+
+   .limitations-container {
+        margin-bottom: 3rem;
+   }
+
+   .limitations-header {
+        width: 42.875rem;
+        margin-left: auto;
+        margin-right: auto;
+   }
+
+   .limitations-description {
+        margin-top: 2rem;
+   }
+
+   .tiles-grid {
+        display: grid;
+        grid-template-columns: 21rem 21rem;
+        grid-template-rows: 15rem 15rem 15rem;
+        column-gap: 1rem;
+        row-gap: 1rem;;
+        justify-content: center;
+   }
+
+   .tile-title {
+        margin-top: 1rem;
+   }
+
+   .limitations-tile {
+        width: 21rem;
+        box-shadow: 7px 2px 34px -19px rgba(0,0,0,1)
+   }
+
+   .race-tile {
+        grid-area: 3/1/4/3;
+   }
+}
+
+@media screen and (min-width: 1500px) {
+    .hero-flex-container {
+        width: 72.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo-container {
+        width: 90rem;
+        
+    }
+
+    .hero-title {
+        text-align: left;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .hero-text {
+        text-align: left;
+        padding-right: 10rem;
+    }
+
+    .calculator-container {
+        width: 35.25rem;
+    }
+
+    .radio-btn-container {
+        margin-left: 2rem;
+    }
+
+    .textarea-flex {
+        width: 31.25rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    textarea {
+        width: 10rem;
+    }
+
+    .user-input, .user-input-2 {
+        width: 14.875rem;
+    }
+
+    .user-input {
+        margin-right: .5rem;
+    }
+
+    .user-input-2 {
+        margin-left: .5rem;
+    }
+
+    .welcome-container {
+        width: 31.25rem;
+    }
+
+    .result-container {
+        width: 72rem;
+        height: min-content;
+        grid-template-columns: 35.25rem 35.25rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        column-gap: 0;
+    }
+
+    .left-flex, .right-flex {
+        width: 29.25rem;
+    }
+
+    .tips-flex-container {
+        width: 90rem;
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .tip-tile {
+        width: 22.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .limitations-container {
+        width: 90rem;
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .limitations-title {
+        font-size: 3rem; 
+    }
+
+    .limitations-title, .limitations-description {
+        text-align: start;
+        margin-left: 0;
+    }
+
+    .limitations-description {
+        width: 35.25rem;
+    }
+
+    .tiles-grid {
+        grid-template-columns: 11.4rem 11.4rem 11.4rem 11.4rem 11.4rem;
+        position: relative;
+        right: 9rem;
+    }
+
+    .limitations-tile {
+        width: 22.8rem;
+    }
+
+    .gender-tile {
+        grid-area: 1/3/2/5;
+    }
+
+    .age-tile {
+        grid-area: 2/2/3/4;
+    }
+
+    .muscle-tile {
+        grid-area: 2/4/3/6;
+    }
+
+    .pregnancy-tile {
+        grid-area: 3/1/4/3;
+    }
+
+    .race-tile {
+        grid-area: 3/3/4/5;
+    }
+}
