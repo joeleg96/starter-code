@@ -38,16 +38,40 @@
             <div class="textarea-flex">
               <div class="height-container">
                 <p class="height-label">Height</p>
-                <div class="user-input tp4"><textarea placeholder="0"></textarea></div>
+                <div class="user-input tp4"><textarea class="height-input" placeholder="0"></textarea></div>
               </div>
               <div class="weight-container">
                 <p class="weight-label">Weight</p>
-                <div class="user-input-2 tp4"><textarea placeholder="0"></textarea></div>
+                <div class="user-input-2 tp4"><textarea class="weight-input" placeholder="0"></textarea></div>
+              </div>
+            </div>
+            <div class="textarea-imperial-flex hide">
+              <div class="height-container">
+                <p class="height-label">Height</p>
+                <div class="imperial-weight-flex">
+                  <div class="user-input-imperial-ft tp4"><textarea class="ft-input" placeholder="0"></textarea></div>
+                  <div class="user-input-imperial-in tp4"><textarea class="in-input" placeholder="0"></textarea></div>
+                </div>
+              </div>
+              <div class="weight-container">
+                <p class="weight-label">Weight</p>
+                <div class="user-input-imperial-lbs tp4"><textarea class="lbs-input" placeholder="0"></textarea></div>
               </div>
             </div>
             <div class="welcome-container">
-              <h2 class="welcome-header tp4">Welcome!</h2>
-              <p class="welcome-text tp7">Enter your height and weight and you'll see your BMI result here.</p>
+              <div class="welcome-display-1">
+                <h2 class="welcome-header tp4">Welcome!</h2>
+                <p class="welcome-text tp7">Enter your height and weight and you'll see your BMI result here.</p>
+              </div>
+              <div class="welcome-display-2 hide">
+                <div class="display-2-left-flex">
+                  <p class="tp6">Your BMI is...</p>
+                  <p class="user-bmi-result tp2">23.4</p>
+                </div>
+                <div class="display-2-right-flex">
+                  <p class="user-bmi-explained tp7">Your BMI suggests you're a healthy weight.</p>
+                </div>
+              </div>
           </div>
         </div>
       </div>
@@ -133,5 +157,7 @@
       </div>
     </div>
   </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <script src="./index.js" charset="UTF-8"></script>
 </body>
 </html>
