@@ -1,0 +1,623 @@
+:root {
+    --dark-cyan: #0E8784;
+    --dark-grey-blue: #333D4B;
+    --pale-orange: #FDD6BA;
+    --light-cream: #FEFCF7;
+    --grey: #83888F;
+}
+
+.title-alternate-big {
+    font-family: "Fraunces", sans-serif;
+    font-size: 9.375rem;
+    line-height: 4.5rem;
+}
+
+.h1-typography {
+    font-family: "Fraunces", sans-serif;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+}
+
+.h2-typography {
+    font-family: "Fraunces", sans-serif;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+.h3-typography {
+    font-family: "Fraunces", sans-serif;
+    font-size: 2rem;
+    line-height: 2.25rem;
+}
+
+.h4-typography {
+    font-family: "Fraunces", sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem; 
+}
+
+.body-typography {
+    font-family: "Barlow", sans-serif;
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+
+body {
+    background-color: var(--light-cream);
+}
+
+/* Mobile */
+.desktop-nav-container {
+    display: none;
+}
+
+.mobile-nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    margin-left: 1rem;
+}
+
+.hamburger-container {
+    margin-right: 1rem;
+}
+
+.great-coffee-container {
+    width: 95%;
+    height: 40em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-radius: .825rem;
+    background-image: url("./assets/home/mobile/image-hero-coffeepress.jpg");
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.great-coffee-title {
+    width: 17rem;
+    color: var(--light-cream);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.great-coffee-text {
+    color: var(--light-cream);
+    text-align: center;
+    width: 18rem;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: .8;
+}
+
+.create-plan-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.create-plan-btn {
+    width: 13.5rem;
+    height: 3.5rem;
+    background-color: #0E8784;
+    color: var(--light-cream);
+    font-weight: 700;
+    border-radius: .25rem;
+    border: none;
+    font-size: 1.25rem;
+}
+
+.create-plan-btn:hover {
+    cursor: pointer;
+}
+
+.collection-container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8rem;
+}
+
+.collection-item {
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.collection-title {
+    text-align: center;
+    background-image: linear-gradient(180deg, var(--dark-grey-blue), #FEFCF7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.coffee-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coffee-collection-img {
+    width: 12.5rem;
+    height: 9.43rem;
+    margin-bottom: -2rem;
+    
+}
+
+.coffee-name, .coffee-description {
+    text-align: center;
+}
+
+.coffee-description {
+    width: 20rem;
+    margin-top: -1.5rem;
+    margin-bottom: 4rem;
+}
+
+.choose-us-container {
+    width: 95%;
+    height: 94rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10rem;
+}
+
+.dark-blue-background {
+    background-color: #333D4B;
+    height: 56rem;
+    border-radius: .825rem;
+    padding-top: 3rem;
+}
+
+.choose-us-title, .choose-us-text {
+    color: var(--light-cream);
+    text-align: center;
+}
+
+.choose-us-text {
+    opacity: .8;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quality-container {
+    margin-top: 4rem;
+}
+
+.perk-container {
+    background-color: #0E8784;
+    width: 80%;
+    height: 24rem;
+    border-radius: .825rem;;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.perk-title {
+    color: var(--light-cream);
+    text-align: center;
+}
+
+.perk-text {
+    text-align: center;
+    color: var(--light-cream);
+    width: 13rem;
+}
+
+.how-it-works-title {
+    color: var(--grey);
+    text-align: center;
+}
+
+.connected-circles-container {
+    display: none;
+}
+
+.step-container {
+    margin-top: 5rem;
+}
+
+.step-number, .step-title, .step-text {
+    text-align: center;
+}
+
+.step-number {
+    color: var(--pale-orange);
+    margin: 0;
+}
+
+.step-title {
+    margin-bottom: 1rem;
+}
+
+.step-text {
+    width: 21.5rem;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-container {
+    height: 22rem;
+    background-color: #333D4B;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.white-logo-container {
+    margin-bottom: 1.5rem;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-list-item {
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    color: #83888F;
+    margin-bottom: 1.5rem;
+}
+
+.footer-list-item:hover {
+    cursor: pointer;
+}
+
+.social-media-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+}
+
+.social-media {
+    width: 2rem;
+    height: 2rem;
+}
+
+.social-media:hover {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .mobile-nav {
+        display: none;
+    }
+
+    .desktop-nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    .desktop-logo-container {
+        margin-left: 1rem;
+    }
+
+    .desktop-menu-container > ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .desktop-menu-container > ul > a > li {
+        text-transform: uppercase;
+        font-weight: 500;
+        color: var(--grey);
+        letter-spacing: .92px;
+        line-height: 15px;
+        margin-right: 1.5rem;
+        list-style-type: none;
+    }
+
+    .great-coffee-container {
+        background-image: url("./assets/home/tablet/image-hero-coffeepress.jpg");
+        background-position: center;
+        justify-content: flex-start;
+    }
+
+    .great-coffee-text-container {
+        margin-left: 5rem;
+    }
+
+    .great-coffee-title, .great-coffee-text {
+        text-align: left;
+        width: 25rem;
+    }
+
+    .great-coffee-title {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .create-plan-btn-container {
+        justify-content: flex-start;
+    }
+
+    .collection-container {
+        margin-bottom: 5rem;
+    }
+
+    .collection-title {
+        font-size: 7rem;
+        height: 4rem;
+        padding: 2rem;
+    }
+
+    .items-flex-container {
+        margin-top: -12rem;
+    }
+
+    .collection-item {
+        display: flex;
+    }
+
+    .coffee-collection-img {
+        width: 15rem;
+        height: 12rem;
+    }
+
+    .coffee-name, .coffee-description {
+        text-align: left;
+    }
+
+    .coffee-name {
+        margin-bottom: 3rem;
+    }
+
+    .coffee-collection-text-container {
+       padding-top: 3rem;
+    }
+
+    .choose-us-container {
+        height: 53rem;
+    }
+
+    .dark-blue-background {
+        height: 35rem;
+    }
+
+    .perk-container {
+        height: 12rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .perks-img-container {
+        margin-left: 3rem;
+    }
+
+    .perk-text-container {
+        margin-left: 3rem;
+    }
+
+    .perk-title, .perk-text {
+        text-align: left;
+    }
+
+    .perk-title {
+        margin-bottom: 1rem;
+    }
+
+    .perk-text {
+        width: 25rem;
+    }
+
+    .how-it-works-container {
+        max-width: 75rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items:baseline;
+        padding-left: 2rem;
+    }
+
+    .how-it-works-title {
+        text-align: left;
+    }
+
+    .connected-circles-container {
+        display: block;
+        width: 40rem;
+    }
+
+    .connected-circles {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 0;
+        position: relative;
+    }
+
+    .connected-circles > li {
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid var(--dark-cyan);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEFCF7;
+    }
+
+    .circle-1::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        height: 2px;
+        width: 38rem;
+        left: 2%;
+        background-color: var(--pale-orange);
+    }
+
+    .steps-flex-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .step-number, .step-title, .step-text {
+        text-align: left;
+    }
+
+    .step-title {
+        width: 14rem;
+        height: 4rem;
+    }
+
+    .step-text {
+        width: 13rem;
+        height: min-content;
+        margin-top: 3rem;
+        margin-left: 0;
+    }
+
+    .create-plan-btn-container {
+        width: 100%;
+        margin-top: 4rem;
+    }
+
+    .footer-content-container {
+        width: 30rem;
+    }
+
+    .footer-logo {
+        width: 20rem;
+        height: 2rem;
+    }
+
+    .footer-list-container {
+        width: 100%;
+    }
+
+    .footer-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .social-media-container {
+        justify-content: center;
+    }
+
+    .twitter, .instagram {
+        margin-left: 3rem;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+
+    .desktop-logo-container {
+        margin-left: 3rem;
+    }
+
+    .desktop-menu-container {
+        margin-right: 2rem;
+    }
+
+    .great-coffee-container {
+        background-image: url("./assets/home/desktop/image-hero-coffeepress.jpg");
+    }
+
+    .collection-title {
+        font-size: 11rem;
+    }
+
+    .items-flex-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .collection-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .coffee-name, .coffee-description {
+        text-align: center;
+    }
+
+    .coffee-description {
+        width: 15rem;
+    }
+
+    .choose-us-text {
+        width: 33rem;
+    }
+
+    .dark-blue-background {
+        height: 30rem;
+    }
+
+    .cyan-perks-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .perk-container {
+        width: 22rem;
+        height: 24rem;
+        margin: 0;
+        margin-top: 5rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .perk-text-container, .perks-img-container {
+        margin: 0;
+    }
+
+    .perk-title, .perk-text {
+        text-align: center;
+    }
+
+    .perk-text {
+        width: 18rem;
+    }
+
+    .step-text {
+        width: 20rem;
+    }
+}
