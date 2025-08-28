@@ -3,118 +3,291 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | Coffeeroasters subscription site</title>
 </head>
 
 <body>
-  Home
-  About us
-  Create your plan
+  <nav class="desktop-nav">
+    <div class="desktop-nav-container">
+      <div class="desktop-logo-container">
+        <img src="./assets/shared/desktop/grey-logo.svg" style="width: 10.18rem, height= 1.125rem" alt="Coffeeroasters logo">
+      </div>
+      <div class="desktop-menu-container">
+        <ul>
+          <a><li class="body-typography">Home</li></a>
+          <a><li class="body-typography">About us</li></a>
+          <a><li class="body-typography">Create your plan</li></a>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  Create a plan
-  Build a subscription plan that best fits your needs. We offer an assortment of the best 
-  artisan coffees from around the globe delivered fresh to your door.
+  <nav class="mobile-nav">
+    <div class="mobile-nav-container">
+      <div class="logo-container">
+        <img src="./assets/shared/desktop/grey-logo.svg" style="width: 10.18rem, height= 1.125rem" alt="Coffeeroasters logo">
+      </div>
+      <div class="hamburger-container">
+        <img src="./assets/shared/mobile/icon-hamburger.svg">
+      </div>
+    </div>
+  </nav>
 
-  01
-  Pick your coffee
-  Select from our evolving range of artisan coffees. Our beans are ethically
-  sourced and we pay fair prices for them. There's new coffees in all profiles
-  every month for you to try out.
-  
-  02
-  Choose the frequency
-  Customize your order frequency, quantity, even your roast style and grind type.
-  Pause, skip or cancel your subscription with no commitment through our online portal.
-  
-  03
-  Receive and enjoy!
-  We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning
-  world-class coffees curated to provide a distinct tasting experience.
+  <main>
+    <section>
+      <div class="create-plan-container great-coffee-container">
+        <div class="great-coffee-text-container">
+          <h1 class="great-coffee-title h2-typography">Create a plan</h1>
+          <p class="great-coffee-text body-typography">Build a subscription plan that best fits your needs. We offer an assortment of the best artisan coffees from around the globe delivered fresh to your door.</p>
+        </div>
+      </div>
+    </section>
 
-  01 Preferences
-  02 Bean type
-  03 Quantity
-  04 Grind option
-  05 Deliveries
+    <section>
+      <div class="plan-steps-container">
+        <div class="plan-steps-content-container">
+          <div class="plan-steps-circles-container connected-circles-container">
+            <ul class="plan-steps-circles connected-circles">
+              <li class="plan-circle-1 circle-1"></li>
+              <li class="circle-2"></li>
+              <li class="circle-3"></li>
+            </ul>
+          </div>
+          <div class="plan-steps-flex-container">        
+            <div class="plan-step">
+              <h2 class="plan-step-number h1-typography">01</h2>
+              <h3 class="plan-step-title h3-typography">Pick your coffee</h3>
+              <p class="plan-step-text body-typography">Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There's new coffees in all profiles every month for you to try out.</p>
+            </div>
 
-  How do you drink your coffee?
+            <div class="plan-step">
+              <h2 class="plan-step-number h1-typography">02</h2>
+              <h3 class="plan-step-title h3-typography">Choose the frequency</h3>
+              <p class="plan-step-text body-typography">Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal.</p>
+            </div>
 
-  Capsule
-  Compatible with Nespresso systems and similar brewers
+            <div class="plan-step">
+              <h2 class="plan-step-number h1-typography">03</h2>
+              <h3 class="plan-step-title h3-typography">Receive and enjoy!</h3>
+              <p class="plan-step-text body-typography">We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  Filter
-  For pour over or drip methods like Aeropress, Chemex, and V60
+    <section>
+      <div class="questions-container">
+        <div class="question-list">
+          <div class="question-list-item">
+            <p class="question-list-item-text h4-typography"><span class="span-question-number">01</span> Preferences</p>
+          </div>
+          <hr>
 
-  Espresso
-  Dense and finely ground beans for an intense, flavorful experience
+          <div class="question-list-item">
+            <p class="question-list-item-text h4-typography"><span class="span-question-number">02</span> Bean Type</p>
+          </div>
+          <hr>
 
-  What type of coffee?
+          <div class="question-list-item">
+            <p class="question-list-item-text h4-typography"><span class="span-question-number">03</span> Quantity</p>
+          </div>
+          <hr>
 
-  Single origin
-  Distinct, high quality coffee from a specific family-owned farm
+          <div class="question-list-item">
+            <p class="question-list-item-text h4-typography"><span class="span-question-number">04</span> Grind Option</p>
+          </div>
+          <hr>
 
-  Decaf
-  Just like regular coffee, except the caffeine has been removed
+          <div class="question-list-item">
+            <p class="question-list-item-text h4-typography"><span class="span-question-number">05</span> Deliveries</p>
+          </div>
+        </div>
 
-  Blended
-  Combination of two or three dark roasted beans of organic coffees
+        <div class="all-questions-container">
+          <div class="question-container">
+            <div class="question-drop-down-container">
+              <h3 class="question-title h4-typography">How do you drink your coffee?</h3>
+              <div>
+                <img src="./assets/plan/desktop/icon-arrow.svg">
+              </div>
+            </div>
+            <div class="question-choices-container">
+              <div class="question-choices-btn-container">
+                <button class="choices-btn">
+                  <span class="button-title h4-typography">Capsule</span>
+                  <span class="button-text body-typography">Compatible with Nespresso systems and similar brewers</span>
+                </button>
+              </div>
+              <div class="question-choices-btn-container">
+                <button class="choices-btn">
+                  <span class="button-title h4-typography">Filter</span>
+                  <span class="button-text body-typography">For pour over or drip methods like Aeropress, Chemex, and V60</span>
+                </button>
+              </div>
+              <div class="question-choices-btn-container">
+                <button class="choices-btn">
+                  <span class="button-title h4-typography">Espresso</span>
+                  <span class="button-text body-typography">Dense and finely ground beans for an intense, flavorful experience</span>
+                </button>
+              </div>
+            </div>
+          </div>
 
-  How much would you like?
-  250g
-  Perfect for the solo drinker. Yields about 12 delicious cups.
-  
-  500g
-  Perfect option for a couple. Yields about 40 delectable cups.
+          <div class="question-container">
+            <div class="question-drop-down-container">
+              <h3 class="question-title h4-typography">What type of coffee?</h3>
+              <div>
+                <img src="./assets/plan/desktop/icon-arrow.svg">
+              </div>
+            </div>
+            <div class="question-choices-container">
+              <div class="question-choices-btn-container">
+                <button class="choices-btn">
+                  <span class="button-title h4-typography">Single origin</span>
+                  <span class="button-text body-typography">Distinct, high quality coffee from a specific family-owned farm</span>
+                </button>
+              </div>
+              <div class="question-choices-btn-container">
+                <button class="choices-btn">
+                  <span class="button-title h4-typography">Decaf</span>
+                  <span class="button-text body-typography">Just like regular coffee, except the caffeine has been removed</span>
+                </button>
+              </div>
+              <div class="question-choices-btn-container">
+                <button class="choices-btn">
+                  <span class="button-title h4-typography">Blended</span>
+                  <span class="button-text body-typography">Combination of two or three dark roasted beans of organic coffees</span>
+                </button>
+              </div>
+            </div>
+          </div>
 
-  1000g
-  Perfect for offices and events. Yields about 90 delightful cups.
+          <div class="question-container">
+            <div class="question-drop-down-container">
+              <h3 class="question-title h4-typography">How much would you like?</h3>
+              <div>
+                <img src="./assets/plan/desktop/icon-arrow.svg">
+              </div>
+            </div>
+            <div class="question-choices-container">
+              <div class="question-choices-btn-container">
+                <button class="choices-btn">
+                  <span class="button-title h4-typography">250g</span>
+                  <span class="button-text body-typography">Perfect for the solo drinker. Yields about 12 delicious cups.</span>
+                </button>
+              </div>
+              <div class="question-choices-btn-container">
+                <button class="choices-btn">
+                  <span class="button-title h4-typography">500g</span>
+                  <span class="button-text body-typography">Perfect option for a couple. Yields about 40 delectable cups.</span>
+                </button>
+              </div>
+              <div class="question-choices-btn-container">
+                <button class="choices-btn">
+                  <span class="button-title h4-typography">1000g</span>
+                  <span class="button-text body-typography">Perfect for offices and events. Yields about 90 delightful cups.</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="question-container">
+            <div class="question-drop-down-container">
+              <h3 class="question-title h4-typography">Want us to grind them?</h3>
+              <div>
+                <img src="./assets/plan/desktop/icon-arrow.svg">
+              </div>
+            </div>
+            <div class="question-choices-container">
+              <div class="question-choices-btn-container">
+                <button class="choices-btn">
+                  <span class="button-title h4-typography">Wholebean</span>
+                  <span class="button-text body-typography">Best choice if you cherish the full sensory experience</span>
+                </button>
+              </div>
+              <div class="question-choices-btn-container">
+                <button class="choices-btn">
+                  <span class="button-title h4-typography">Filter</span>
+                  <span class="button-text body-typography">For drip or pour-over coffee methods such as V60 or Aeropress.</span>
+                </button>
+              </div>
+              <div class="question-choices-btn-container">
+                <button class="choices-btn">
+                  <span class="button-title h4-typography">Cafetiére</span>
+                  <span class="button-text body-typography">Course ground beans specially suited for french press coffee.</span>
+                </button>
+              </div>
+            </div>
+          </div>
 
-  Want us to grind them?
+          <div class="question-container">
+            <div class="question-drop-down-container">
+              <h3 class="question-title h4-typography">How often should we deliver?</h3>
+              <div>
+                <img src="./assets/plan/desktop/icon-arrow.svg">
+              </div>
+            </div>
+            <div class="question-choices-container">
+              <div class="question-choices-btn-container">
+                <button class="choices-btn">
+                  <span class="button-title h4-typography">Every week</span>
+                  <span class="button-text body-typography">$14.00 per shipment. Includes free first-class shipping.</span>
+                </button>
+              </div>
+              <div class="question-choices-btn-container">
+                <button class="choices-btn">
+                  <span class="button-title h4-typography">Every 2 weeks</span>
+                  <span class="button-text body-typography">$17.25 per shipment. Includes free priority shipping.</span>
+                </button>
+              </div>
+              <div class="question-choices-btn-container">
+                <button class="choices-btn">
+                  <span class="button-title h4-typography">Every month</span>
+                  <span class="button-text body-typography">$22.50 per shipment. Includes free priority shipping.</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="grey-summary-container">
+          <h4 class="order-summary-title body-typography">Order Summary</h4>
+          <p class="order-summary-text h3-typography">“I drink coffee _____, with a _____ type of bean. _____ ground ala _____, sent to me _____.”</p>
+        </div>
+        <div class="summary-btn-container">
+          <button class="create-plan-btn h3-typography">Create my plan!</button>
+        </div>
+        </div>
+      </div>
+    </section>
 
-  Wholebean
-  Best choice if you cherish the full sensory experience
-
-  Filter
-  For drip or pour-over coffee methods such as V60 or Aeropress
-
-  Cafetiére
-  Course ground beans specially suited for french press coffee
-
-  How often should we deliver?
-
-  Every week
-  $14.00 per shipment. Includes free first-class shipping.
-
-  Every 2 weeks
-  $17.25 per shipment. Includes free priority shipping.
-
-  Every month
-  $22.50 per shipment. Includes free priority shipping.
-
-  Order Summary
-  “I drink coffee _____, with a _____ type of bean. _____ ground ala _____, 
-  sent to me _____.”
-
-  Create my plan!
-
-  <!-- Modal -->
-  Order Summary
-
-  “I drink coffee _____, with a _____ type of bean. _____ ground ala _____,
-  sent to me _____.”
-
-  Is this correct? You can proceed to checkout or go back to plan selection if something 
-  is off. Subscription discount codes can also be redeemed at the checkout.
-
-  $_____/month
-
-  Checkout
-  <!-- End modal -->
-
-  Home
-  About us
-  Create your plan
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content-container">
+          <div class="white-logo-container">
+            <img class="footer-logo" src="./assets/shared/desktop/white-logo.svg" style="width: 13.5rem, height= 1.5rem" alt="Coffeeroasters logo">
+          </div>
+          <div class="footer-list-container">
+            <ul class="footer-list">
+              <li class="footer-list-item body-typography">Home</li>
+              <li class="footer-list-item body-typography">About us</li>
+              <li class="footer-list-item body-typography">Create your plan</li>
+            </ul>
+          </div>
+          <div class="social-media-container">
+            <img class="social-media facebook" src="./assets/shared/desktop/icon-facebook.svg" alt="icon-facebook">
+            <img class="social-media twitter" src="./assets/shared/desktop/icon-twitter.svg" alt="icon-twitter">
+            <img class="social-media instagram" src="./assets/shared/desktop/icon-instagram.svg" alt="icon-instagram">
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+  </main>
 </body>
-
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+<script src="./main.js" charset="UTF-8"></script>
 </html>
