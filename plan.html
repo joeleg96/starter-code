@@ -18,22 +18,30 @@
       </div>
       <div class="desktop-menu-container">
         <ul>
-          <a><li class="body-typography">Home</li></a>
-          <a><li class="body-typography">About us</li></a>
-          <a><li class="body-typography">Create your plan</li></a>
+          <a href="./index.html"><li class="body-typography">Home</li></a>
+          <a href="./about.html"><li class="body-typography">About us</li></a>
+          <a href="./plan.html"><li class="body-typography">Create your plan</li></a>
         </ul>
+        <div class="hamburger-container">
+          <img class="hamburger-icon" src="./assets/shared/mobile/icon-hamburger.svg" alt="hamburger-icon">
+        </div>
       </div>
     </div>
   </nav>
 
-  <nav class="mobile-nav">
+  <nav class="mobile-nav hide">
     <div class="mobile-nav-container">
-      <div class="logo-container">
+      <div class="mobile-nav-header">
         <img src="./assets/shared/desktop/grey-logo.svg" style="width: 10.18rem, height= 1.125rem" alt="Coffeeroasters logo">
+        <img class="close-icon" src="./assets/shared/mobile/icon-close.svg" alt="menu close">
       </div>
-      <div class="hamburger-container">
-        <img src="./assets/shared/mobile/icon-hamburger.svg">
-      </div>
+      <div class="mobile-nav-list-container">
+        <ul class="mobile-menu-list">
+          <a href="./index.html"><li class="mobile-menu-item h4-typography">Home</li></a>
+          <a href="./about.html"><li class="mobile-menu-item h4-typography">About Us</li></a>
+          <a href="./plan.html"><li class="mobile-menu-item h4-typography"> Create Your Plan</li></a>
+        </ul>
+      </div> 
     </div>
   </nav>
 
@@ -113,24 +121,25 @@
             <div class="question-drop-down-container">
               <h3 class="question-title h4-typography">How do you drink your coffee?</h3>
               <div>
-                <img src="./assets/plan/desktop/icon-arrow.svg">
+                <img id="capsule" class="capsule-expand-arrow expand-arrow hide" src="./assets/plan/desktop/icon-arrow.svg">
+                <img id="capsule"class="capsule-minimize-arrow minimize-arrow" src="./assets/plan/desktop/icon-arrow.svg">
               </div>
             </div>
-            <div class="question-choices-container">
+            <div class="capsule-options-container question-choices-container">
               <div class="question-choices-btn-container">
-                <button class="choices-btn">
+                <button id="Capsule" class="capsule-option choices-btn">
                   <span class="button-title h4-typography">Capsule</span>
                   <span class="button-text body-typography">Compatible with Nespresso systems and similar brewers</span>
                 </button>
               </div>
               <div class="question-choices-btn-container">
-                <button class="choices-btn">
+                <button id="Filter" class="capsule-option  choices-btn">
                   <span class="button-title h4-typography">Filter</span>
                   <span class="button-text body-typography">For pour over or drip methods like Aeropress, Chemex, and V60</span>
                 </button>
               </div>
               <div class="question-choices-btn-container">
-                <button class="choices-btn">
+                <button id="Espresso" class="capsule-option choices-btn">
                   <span class="button-title h4-typography">Espresso</span>
                   <span class="button-text body-typography">Dense and finely ground beans for an intense, flavorful experience</span>
                 </button>
@@ -142,24 +151,25 @@
             <div class="question-drop-down-container">
               <h3 class="question-title h4-typography">What type of coffee?</h3>
               <div>
-                <img src="./assets/plan/desktop/icon-arrow.svg">
+                <img id="coffee-type" class="coffee-type-expand-arrow expand-arrow" src="./assets/plan/desktop/icon-arrow.svg">
+                <img id="coffee-type" class="coffee-type-minimize-arrow minimize-arrow hide" src="./assets/plan/desktop/icon-arrow.svg">
               </div>
             </div>
-            <div class="question-choices-container">
+            <div class="coffee-type-options-container question-choices-container hide">
               <div class="question-choices-btn-container">
-                <button class="choices-btn">
+                <button id="Single-origin" class="coffee-option choices-btn">
                   <span class="button-title h4-typography">Single origin</span>
                   <span class="button-text body-typography">Distinct, high quality coffee from a specific family-owned farm</span>
                 </button>
               </div>
               <div class="question-choices-btn-container">
-                <button class="choices-btn">
+                <button id="Decaf" class="coffee-option choices-btn">
                   <span class="button-title h4-typography">Decaf</span>
                   <span class="button-text body-typography">Just like regular coffee, except the caffeine has been removed</span>
                 </button>
               </div>
               <div class="question-choices-btn-container">
-                <button class="choices-btn">
+                <button id="Blended" class="coffee-option choices-btn">
                   <span class="button-title h4-typography">Blended</span>
                   <span class="button-text body-typography">Combination of two or three dark roasted beans of organic coffees</span>
                 </button>
@@ -171,24 +181,25 @@
             <div class="question-drop-down-container">
               <h3 class="question-title h4-typography">How much would you like?</h3>
               <div>
-                <img src="./assets/plan/desktop/icon-arrow.svg">
+                <img id="quantity" class="quantity-expand-arrow expand-arrow" src="./assets/plan/desktop/icon-arrow.svg">
+                <img id="quantity" class="quantity-minimize-arrow minimize-arrow hide" src="./assets/plan/desktop/icon-arrow.svg">
               </div>
             </div>
-            <div class="question-choices-container">
+            <div class="quantity-options-container question-choices-container hide">
               <div class="question-choices-btn-container">
-                <button class="choices-btn">
+                <button id="250g" class="quantity-option choices-btn">
                   <span class="button-title h4-typography">250g</span>
                   <span class="button-text body-typography">Perfect for the solo drinker. Yields about 12 delicious cups.</span>
                 </button>
               </div>
               <div class="question-choices-btn-container">
-                <button class="choices-btn">
+                <button id="500g" class="quantity-option choices-btn">
                   <span class="button-title h4-typography">500g</span>
                   <span class="button-text body-typography">Perfect option for a couple. Yields about 40 delectable cups.</span>
                 </button>
               </div>
               <div class="question-choices-btn-container">
-                <button class="choices-btn">
+                <button id="1000g" class="quantity-option choices-btn">
                   <span class="button-title h4-typography">1000g</span>
                   <span class="button-text body-typography">Perfect for offices and events. Yields about 90 delightful cups.</span>
                 </button>
@@ -200,24 +211,25 @@
             <div class="question-drop-down-container">
               <h3 class="question-title h4-typography">Want us to grind them?</h3>
               <div>
-                <img src="./assets/plan/desktop/icon-arrow.svg">
+                <img id="grind" class="grind-expand-arrow expand-arrow" src="./assets/plan/desktop/icon-arrow.svg">
+                <img id="grind" class="grind-minimize-arrow minimize-arrow hide" src="./assets/plan/desktop/icon-arrow.svg">
               </div>
             </div>
-            <div class="question-choices-container">
+            <div class="grind-options-container question-choices-container hide">
               <div class="question-choices-btn-container">
-                <button class="choices-btn">
+                <button id="Wholebean" class="grind-option choices-btn">
                   <span class="button-title h4-typography">Wholebean</span>
                   <span class="button-text body-typography">Best choice if you cherish the full sensory experience</span>
                 </button>
               </div>
               <div class="question-choices-btn-container">
-                <button class="choices-btn">
+                <button id="Filter" class="grind-option choices-btn">
                   <span class="button-title h4-typography">Filter</span>
                   <span class="button-text body-typography">For drip or pour-over coffee methods such as V60 or Aeropress.</span>
                 </button>
               </div>
               <div class="question-choices-btn-container">
-                <button class="choices-btn">
+                <button id="Cafetiére" class="grind-option choices-btn">
                   <span class="button-title h4-typography">Cafetiére</span>
                   <span class="button-text body-typography">Course ground beans specially suited for french press coffee.</span>
                 </button>
@@ -229,24 +241,25 @@
             <div class="question-drop-down-container">
               <h3 class="question-title h4-typography">How often should we deliver?</h3>
               <div>
-                <img src="./assets/plan/desktop/icon-arrow.svg">
+                <img id="delivery" class="delivery-expand-arrow expand-arrow" src="./assets/plan/desktop/icon-arrow.svg">
+                <img id="delivery" class="delivery-minimize-arrow minimize-arrow hide" src="./assets/plan/desktop/icon-arrow.svg">
               </div>
             </div>
-            <div class="question-choices-container">
+            <div class="delivery-options-container question-choices-container hide">
               <div class="question-choices-btn-container">
-                <button class="choices-btn">
+                <button id="Weekly" class="delivery-option choices-btn">
                   <span class="button-title h4-typography">Every week</span>
                   <span class="button-text body-typography">$14.00 per shipment. Includes free first-class shipping.</span>
                 </button>
               </div>
               <div class="question-choices-btn-container">
-                <button class="choices-btn">
+                <button id="Bi-Weekly" class="delivery-option choices-btn">
                   <span class="button-title h4-typography">Every 2 weeks</span>
                   <span class="button-text body-typography">$17.25 per shipment. Includes free priority shipping.</span>
                 </button>
               </div>
               <div class="question-choices-btn-container">
-                <button class="choices-btn">
+                <button id="Monthly" class="delivery-option choices-btn">
                   <span class="button-title h4-typography">Every month</span>
                   <span class="button-text body-typography">$22.50 per shipment. Includes free priority shipping.</span>
                 </button>
@@ -255,10 +268,26 @@
           </div>
           <div class="grey-summary-container">
           <h4 class="order-summary-title body-typography">Order Summary</h4>
-          <p class="order-summary-text h3-typography">“I drink coffee _____, with a _____ type of bean. _____ ground ala _____, sent to me _____.”</p>
+          <p class="order-summary-text h3-typography">“I drink my coffee as <span class=" chosen-filter-span dynamic-text">Filter</span>, with a <span class="chosen-coffee-span dynamic-text">Decaf</span> type of bean. <span class="chosen-quantity-span dynamic-text">250g</span> ground ala <span class="chosen-grind-span dynamic-text">Cafetiére</span>, sent to me <span class="chosen-delivery-span dynamic-text">Every-Week</span>.”</p>
         </div>
         <div class="summary-btn-container">
-          <button class="create-plan-btn h3-typography">Create my plan!</button>
+          <button class="open-subscription-modal-btn create-plan-btn h3-typography">Create my plan!</button>
+        </div>
+
+        <div class="subscription-modal hide">
+          <div class="subscription-modal-header">
+            <h3 class="h3-typography">Order Summary</h3>
+          </div>
+          <div class="subscription-text-container">
+            <p class="subscription-summary-text h3-typography">“I drink my coffee as <span class=" chosen-filter-span dynamic-text">Filter</span>, with a <span class="chosen-coffee-span dynamic-text">Decaf</span> type of bean. <span class="chosen-quantity-span dynamic-text">250g</span> ground ala <span class="chosen-grind-span dynamic-text">Cafetiére</span>, sent to me <span class="chosen-delivery-span dynamic-text">Every-Week</span>.”</p>
+            <p class="order-confirmation body-typography">Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout.</p>
+          </div>
+          <div class="subscription-checkout-flex">
+            <span class="tablet-dynamic-price h4-typography">$14.00/mo</span>
+            <div class="subscription-checkout-btn-container">
+              <button class="checkout-btn create-plan-btn h4-typography">Checkout <span class="dynamic-price"> - $14.00 / mo</span></button>
+            </div>
+          </div>
         </div>
         </div>
       </div>
@@ -272,9 +301,9 @@
           </div>
           <div class="footer-list-container">
             <ul class="footer-list">
-              <li class="footer-list-item body-typography">Home</li>
-              <li class="footer-list-item body-typography">About us</li>
-              <li class="footer-list-item body-typography">Create your plan</li>
+              <a href="./index.html"><li class="footer-list-item body-typography">Home</li></a>
+              <a href="./about.html"><li class="footer-list-item body-typography">About us</li></a>
+              <a href="./plan.html"></a><li class="footer-list-item body-typography">Create your plan</li></a>
             </ul>
           </div>
           <div class="social-media-container">

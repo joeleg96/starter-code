@@ -48,14 +48,61 @@ body {
 
 /* Mobile */
 .desktop-nav-container {
-    display: none;
-}
-
-.mobile-nav-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.desktop-menu-container > ul{
+    display: none;
+}
+
+.mobile-nav-container {
+    width: 100%;
+    height: 30%;
+    background-color: var(--light-cream);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    box-shadow: 10px 20px 55px 120px var(--light-cream);
+}
+
+.mobile-nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.mobile-nav-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.mobile-menu-list {
+    list-style: none;
+    margin-top: 3rem;
+}
+
+.mobile-menu-item {
+    font-weight: 800;
+    color: var(--dark-grey-blue);
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+a {
+    text-decoration: none;
 }
 
 .logo-container {
@@ -344,6 +391,14 @@ body {
         list-style-type: none;
     }
 
+    .desktop-menu-container > ul > a > li:hover {
+        color: var(--dark-grey-blue);
+    }
+
+    .hamburger-container {
+        display: none;
+    }
+
     .great-coffee-container {
         background-image: url("./assets/home/tablet/image-hero-coffeepress.jpg");
         background-position: center;
@@ -373,13 +428,13 @@ body {
     }
 
     .collection-title {
-        font-size: 7rem;
+        font-size: 6rem;
         height: 4rem;
         padding: 2rem;
     }
 
     .items-flex-container {
-        margin-top: -12rem;
+        margin-top: -11rem;
     }
 
     .collection-item {
@@ -412,6 +467,7 @@ body {
     }
 
     .perk-container {
+        max-width: 38rem;
         height: 12rem;
         display: flex;
         flex-direction: row;
@@ -558,12 +614,13 @@ body {
     }
 
     .collection-title {
-        font-size: 11rem;
+        font-size: 9rem;
     }
 
     .items-flex-container {
         display: flex;
         flex-direction: row;
+        margin-top: -10rem;
     }
 
     .collection-item {
@@ -577,6 +634,10 @@ body {
 
     .coffee-description {
         width: 15rem;
+    }
+
+    .choose-us-container {
+        margin-bottom: 2rem;
     }
 
     .choose-us-text {
@@ -594,7 +655,7 @@ body {
     }
 
     .perk-container {
-        width: 22rem;
+        width: 19rem;
         height: 24rem;
         margin: 0;
         margin-top: 5rem;
@@ -908,6 +969,10 @@ body {
     margin-right: auto;
 }
 
+.questions-container {
+    position: relative;
+}
+
 .question-list {
     display: none;
 }
@@ -925,6 +990,10 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.minimize-arrow {
+    transform: rotate(180deg);
 }
 
 .question-title {
@@ -989,6 +1058,65 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+}
+
+.subscription-modal {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    background-color: var(--light-cream);
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 99;
+    box-shadow: 0px 0px 1000px 1000px rgba(0,0,0,0.75);
+    border-radius: .5rem;
+    padding-bottom: 2rem;
+}
+
+.subscription-modal-header {
+    height: 5.5rem;
+    background-color: #2C343E;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    padding-top: 1rem;
+    padding-left: .5rem;
+}
+
+.subscription-modal-header > h3 {
+    color: var(--light-cream);
+    margin-top: 0;
+    padding: 1rem;
+}
+
+.subscription-text-container {
+    padding: 1.5rem;
+}
+
+.subscription-summary-text {
+    line-height: 50px;
+    color: var(--grey);
+    font-weight: 800;
+}
+
+.order-confirmation {
+    color: var(--dark-grey-blue);
+}
+
+.subscription-checkout-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tablet-dynamic-price {
+    display: none;
+}
+
+.checkout-btn {
+    width: 17.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -1066,6 +1194,26 @@ body {
         width: 43rem;
         height: 13rem;
     }
+
+    .subscription-modal {
+        max-width: 43rem;
+    }
+
+    .subscription-checkout-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .tablet-dynamic-price {
+        display: block;
+        font-weight: 800;
+        color: var(--dark-grey-blue);
+    }
+
+    .dynamic-price {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1100px) {
@@ -1116,7 +1264,28 @@ body {
         margin-right: 1rem;
     }
 
+    .choices-btn:hover {
+        cursor: pointer;
+        background-color: var(--pale-orange);
+    }
+
     .summary-btn-container {
         justify-content: flex-end;
     }
+}
+
+.hide {
+    display: none;
+}
+
+.active-green {
+    background-color: #0E8784;
+}
+
+.dynamic-text {
+    color: var(--dark-cyan);
+}
+
+a:visited {
+    decoration: none;
 }
