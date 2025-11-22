@@ -26,7 +26,10 @@ export default function Header({ toggleSideBar, selectPage }) {
                 </li>
             </ul>
             <div className='hidden lg:block'>
-               <Button onClick={()=>selectPage('Recipes')}>Browse recipes</Button> 
+               <Button 
+                    onClick={()=>selectPage('Recipes')}
+                    >Browse recipes
+                </Button> 
             </div>
         </div>
         <hr className='w-full border-[#E0E6E3] mb-10'></hr>
