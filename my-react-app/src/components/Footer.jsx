@@ -1,7 +1,6 @@
 import InstagramIcon from '../assets/images/icon-instagram.svg';
 import BlueSkyIcon from '../assets/images/icon-bluesky.svg';
 import TikTokIcon from '../assets/images/icon-tiktok.svg';
-import HeartIcon from '../assets/images/suit-heart-fill.svg';
 
 export default function Footer() {
     return <footer className='my-10 '>
