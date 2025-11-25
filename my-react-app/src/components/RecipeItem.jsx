@@ -10,7 +10,7 @@ export default function RecipeItem({ recipeImg, title, description, servings, pr
             <img className='rounded-xl' src={recipeImg} />
             <div className='mt-4 px-2'>
                 <h3 className='text-2xl text-[#163A34] font-semibold truncate mb-2'>{title}</h3>
-                <p className='text-xl text-[#163A34] line-clamp-2'>{description}</p>
+                <p className='text-xl text-[#163A34] line-clamp-2 lg:line-clamp-1'>{description}</p>
                 <div className='grid grid-cols-2 my-4'>
                     <div className='flex items-center gap-2'>
                         <img src={servingsIcon} />
