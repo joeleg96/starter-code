@@ -1,6 +1,6 @@
 {
   "name": "my-react-app",
-  "homepage": "https://{username}.github.io/{repo-name}/",
+  "homepage": "https://joeleg96.github.io/recipe-finder/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
