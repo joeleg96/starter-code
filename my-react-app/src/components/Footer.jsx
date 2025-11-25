@@ -12,10 +12,7 @@ export default function Footer() {
                 <li className='hover:cursor-pointer'><img src={BlueSkyIcon} alt="BlueSky icon" /></li>
                 <li className='hover:cursor-pointer'><img src={TikTokIcon} alt="TikTok icon" /></li>
             </ul>
-            <ul className='flex gap-1.5 justify-center mt-6 md:mt-0'>
-                <li><p className='text-lg text-[#163A34] font-bold'>Made with</p></li>
-                <img src={HeartIcon} />
-            </ul> 
+            <p className='text-lg text-[#163A34] font-bold'>Made with ❤️ and 🥑</p> 
         </div>    
     </footer>
 }
