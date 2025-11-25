@@ -3,9 +3,10 @@ import prepIcon from '../assets/images/icon-prep-time.svg';
 import cookIcon from '../assets/images/icon-cook-time.svg';
 import Button from './Button';
 
-export default function RecipeItem({ recipeImg, title, description, servings, prepMinutes, cookMinutes, selectPage, selectRecipe, id}) {
+export default function RecipeItem({ recipeImg, title, description, servings, prepMinutes, cookMinutes, selectPage, selectRecipe, id, ...props}) {
+
     return <section>
-        <div className='w-100 mx-auto mt-8 border border-[#E0E6E3] bg-white rounded-xl p-2 md:w-90 lg:w-85'>
+        <div className='mt-8 border border-[#E0E6E3] bg-white rounded-xl p-2' {...props}>
             <img className='rounded-xl' src={recipeImg} />
             <div className='mt-4 px-2'>
                 <h3 className='text-2xl text-[#163A34] font-semibold truncate mb-2'>{title}</h3>
@@ -19,13 +20,13 @@ export default function RecipeItem({ recipeImg, title, description, servings, pr
                         <img src={prepIcon} />
                         <p className='text-xl text-[#163A34]'>Prep: {prepMinutes} min{prepMinutes > 1 ? 's' : null} </p>
                     </div>
-                    <div className='flex items-center gap-2'>
+                    <div className='flex items-center gap-2 w-40'>
                         <img src={cookIcon} />
                         <p className='text-xl text-[#163A34]'>Cook: {cookMinutes} min{cookMinutes > 1 ? 's' : null}</p>
                     </div>
                 </div>
             </div>
-            <Button onClick={()=>{selectPage('Details'), selectRecipe(id)}}>View Recipe</Button>
+            <Button onClick={()=>{selectPage('Details'), selectRecipe(id), window.scrollTo({ top: 0, behavior: "smooth" })}}>View Recipe</Button>
         </div>
     </section>
 }

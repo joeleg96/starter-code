@@ -5,12 +5,12 @@ import cookIcon from '../assets/images/icon-cook-time.svg';
 import IngredientsAndSteps from './IngredientsAndSteps';
 
 export default function FullRecipe({index}) {
-    return <section>
-            <div className='w-100 mx-auto mt-8 border border-[#E0E6E3] bg-white rounded-xl p-2 md:w-90 lg:w-85'>
-                <img className='rounded-xl' src={data[index].image.large} />
+    return <section className='w-[95%] mx-auto'>
+            <div className='mx-auto mt-8 border border-[#E0E6E3] bg-white rounded-xl p-2 lg:flex gap-14'>
+                <img className='rounded-xl lg:max-h-1/2 lg:w-145 lg:h-145' src={data[index].image.large} />
                 <div className='mt-4 px-2'>
                     <h3 className='text-2xl text-[#163A34] font-extrabold truncate'>{data[index].title}</h3>
-                    <p className='text-xl text-[#163A34] line-clamp-2'>{data[index].description}</p>
+                    <p className='text-xl text-[#163A34] mt-4'>{data[index].overview}</p>
                     <div className='grid grid-cols-2 my-4'>
                         <div className='flex items-center gap-2'>
                             <img src={servingsIcon} />
@@ -27,11 +27,19 @@ export default function FullRecipe({index}) {
                     </div>
                     <div>
                         <h4 className='text-xl text-[#163A34] font-semibold truncate mb-4'>Ingredients:</h4>
-                        {data.map(item => {
+                        {data[index].ingredients.map(item => 
                             <IngredientsAndSteps 
-                                text={item.ingredients}
+                                text={item}
                             />
-                        })}
+                        )}
+                    </div>
+                    <div>
+                        <h4 className='text-xl text-[#163A34] font-semibold truncate mb-4'>Instructions:</h4>
+                        {data[index].instructions.map(item => 
+                            <IngredientsAndSteps 
+                                text={item}
+                            />
+                        )}
                     </div>
                 </div>
             </div>

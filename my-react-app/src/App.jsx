@@ -21,7 +21,6 @@ function App() {
 
   function handleSelectedRecipe(id) {
     setSelectedRecipe(id-1);
-    console.log(selectedRecipe);
   }
   
   let content;
@@ -33,7 +32,7 @@ function App() {
   } else if (activePage === 'Recipes') {
     content = <RecipesPage selectPage={setActivePage} selectRecipe={handleSelectedRecipe} />;
   } else if (activePage === 'Details') {
-    content = <RecipeDetailsPage chosenRecipe={selectedRecipe} />;
+    content = <RecipeDetailsPage selectPage={setActivePage} chosenRecipe={selectedRecipe} selectRecipe={handleSelectedRecipe} />;
   }
 
   return (
