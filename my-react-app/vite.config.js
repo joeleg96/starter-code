@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: "https://joeleg96.github.io/recipe-finder/"
+  base: "/my-vite-site/"
 })
