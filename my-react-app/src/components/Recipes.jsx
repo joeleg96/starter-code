@@ -6,7 +6,7 @@ export default function Recipes({ selectPage, selectRecipe }) {
        {data.map(item => (
             <RecipeItem
                 key={item.id}
-                recipeImg={item.image.large}
+                recipeImg={import.meta.env.BASE_URL + item.image.large}
                 title={item.title}
                 description={item.overview}
                 servings={item.servings}

@@ -34,7 +34,7 @@
     "title": "Avocado & Tomato Wholegrain Toast",
     "slug": "avocado-tomato-wholegrain-toast",
     "image": {
-      "large": "/public/images/avocado-tomato-wholegrain-toast-large.webp",
+      "large": "/images/avocado-tomato-wholegrain-toast-large.webp",
       "small": "./assets/images/avocado-tomato-wholegrain-toast-small.webp"
     },
     "overview": "Creamy avocado spread over toasted wholegrain bread, topped with juicy tomatoes.",
@@ -61,7 +61,7 @@
     "title": "One-Pan Lemon Garlic Salmon with Asparagus",
     "slug": "one-pan-lemon-garlic-salmon-with-asparagus",
     "image": {
-      "large": "/public/images/salmon-asparagus-large.webp",
+      "large": "/images/salmon-asparagus-large.webp",
       "small": "./assets/images/salmon-asparagus-small.webp"
     },
     "overview": "A 15-minute weeknight dinner of flaky salmon and tender asparagus.",
@@ -89,7 +89,7 @@
     "title": "Quinoa Veggie Power Bowl",
     "slug": "quinoa-veggie-power-bowl",
     "image": {
-      "large": "/public/images/quinoa-veggie-bowl-large.webp",
+      "large": "/images/quinoa-veggie-bowl-large.webp",
       "small": "./assets/images/quinoa-veggie-bowl-small.webp"
     },
     "overview": "A balanced bowl of fluffy quinoa, roasted veggies and healthy fats.",
@@ -119,7 +119,7 @@
     "title": "Sweet Potato Black Bean Tacos",
     "slug": "sweet-potato-black-bean-tacos",
     "image": {
-      "large": "/public/images/sweet-potato-tacos-large.webp",
+      "large": "/images/sweet-potato-tacos-large.webp",
       "small": "./assets/images/sweet-potato-tacos-small.webp"
     },
     "overview": "Smoky roasted sweet potatoes and black beans tucked into warm tortillas.",
@@ -149,7 +149,7 @@
     "title": "Greek Yogurt Berry Parfait",
     "slug": "greek-yogurt-berry-parfait",
     "image": {
-      "large": "/public/images/greek-yogurt-large.webp",
+      "large": "/images/greek-yogurt-large.webp",
       "small": "./assets/images/greek-yogurt-small.webp"
     },
     "overview": "Layers of creamy yogurt, fresh berries and crunchy oats for a high-protein snack.",
@@ -174,7 +174,7 @@
     "title": "Lentil & Spinach Soup",
     "slug": "lentil-spinach-soup",
     "image": {
-      "large": "/public/images/lentil-soup-large.webp",
+      "large": "/images/lentil-soup-large.webp",
       "small": "./assets/images/lentil-soup-small.webp"
     },
     "overview": "A hearty 30-minute soup rich in plant protein and iron.",
@@ -207,7 +207,7 @@
     "title": "Banana Oat Pancakes",
     "slug": "banana-oat-pancakes",
     "image": {
-      "large": "/public/images/banana-pancakes-large.webp",
+      "large": "/images/banana-pancakes-large.webp",
       "small": "./assets/images/banana-pancakes-small.webp"
     },
     "overview": "Flour-free pancakes sweetened naturally with ripe bananas.",
