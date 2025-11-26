@@ -4,7 +4,7 @@
     "title": "Mediterranean Chickpea Salad",
     "slug": "mediterranean-chickpea-salad",
     "image": {
-      "large": "/public/images/mediterranean-chickpea-salad-large.webp",
+      "large": "/images/mediterranean-chickpea-salad-large.webp",
       "small": "./assets/images/mediterranean-chickpea-salad-small.webp"
     },
     "overview": "A refreshing, protein-packed salad tossed in a lemon-olive oil dressing.",
@@ -119,7 +119,7 @@
     "title": "Sweet Potato Black Bean Tacos",
     "slug": "sweet-potato-black-bean-tacos",
     "image": {
-      "large": "public/images/sweet-potato-tacos-large.webp",
+      "large": "/public/images/sweet-potato-tacos-large.webp",
       "small": "./assets/images/sweet-potato-tacos-small.webp"
     },
     "overview": "Smoky roasted sweet potatoes and black beans tucked into warm tortillas.",

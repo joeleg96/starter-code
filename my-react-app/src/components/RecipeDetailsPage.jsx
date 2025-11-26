@@ -1,5 +1,5 @@
 import FullRecipe from './FullRecipe';
-import data from '../../data.json';
+import data from '../data.json';
 import RecipeItem from './RecipeItem';
 
 export default function RecipeDetailsPage({chosenRecipe, selectRecipe, selectPage}){

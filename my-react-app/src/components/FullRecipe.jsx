@@ -1,4 +1,4 @@
-import data from '../../data.json';
+import data from '../data.json';
 import servingsIcon from '../../public/images/icon-servings.svg';
 import prepIcon from '../../public/images/icon-prep-time.svg';
 import cookIcon from '../../public/images/icon-cook-time.svg';
