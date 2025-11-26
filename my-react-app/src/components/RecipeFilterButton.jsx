@@ -1,4 +1,4 @@
-import dropArrow from '../assets/images/caret-down.svg'
+import dropArrow from '../../public/images/caret-down.svg'
 
 export default function RecipeFilterButton({children}) {
     return <button 

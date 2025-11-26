@@ -1,6 +1,6 @@
-import InstagramIcon from '../assets/images/icon-instagram.svg';
-import BlueSkyIcon from '../assets/images/icon-bluesky.svg';
-import TikTokIcon from '../assets/images/icon-tiktok.svg';
+import InstagramIcon from '../../public/images/icon-instagram.svg';
+import BlueSkyIcon from '../../public/images/icon-bluesky.svg';
+import TikTokIcon from '../../public/images/icon-tiktok.svg';
 
 export default function Footer() {
     return <footer className='my-10 '>

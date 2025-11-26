@@ -1,4 +1,4 @@
-import Arrow from '../assets/images/arrow-right.svg'
+import Arrow from '../../public/images/arrow-right.svg'
 
 export default function IngredientsAndSteps({text}) {
     return <section className='flex gap-4 mb-4'>

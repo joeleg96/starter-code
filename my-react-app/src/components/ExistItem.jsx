@@ -1,4 +1,4 @@
-import ArrowIcon from '../assets/images/arrow-right.svg';
+import ArrowIcon from '../../public/images/arrow-right.svg';
 
 export default function ExistItem({title, description}) {
     return <section className='mt-10'>

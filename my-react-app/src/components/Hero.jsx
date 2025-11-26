@@ -1,6 +1,6 @@
 import Button from './Button'
-import HeroImg from '../assets/images/image-home-hero-large.webp';
-import squiggle from '../assets/images/pattern-squiggle-1.svg';
+import HeroImg from '../../public/images/image-home-hero-large.webp';
+import squiggle from '../../public/images/pattern-squiggle-1.svg';
 
 export default function Hero({selectPage}) {
     return <section>

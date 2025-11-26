@@ -1,7 +1,7 @@
 import data from '../../data.json';
-import servingsIcon from '../assets/images/icon-servings.svg';
-import prepIcon from '../assets/images/icon-prep-time.svg';
-import cookIcon from '../assets/images/icon-cook-time.svg';
+import servingsIcon from '../../public/images/icon-servings.svg';
+import prepIcon from '../../public/images/icon-prep-time.svg';
+import cookIcon from '../../public/images/icon-cook-time.svg';
 import IngredientsAndSteps from './IngredientsAndSteps';
 
 export default function FullRecipe({index}) {

@@ -1,7 +1,7 @@
 import Feature from './Feature';
-import WholeFoodRecipesImg from '../assets/images/icon-whole-food-recipes.svg';
-import MinimumFussImg from '../assets/images/icon-minimum-fuss.svg';
-import SearchInSecondsImg from '../assets/images/icon-search-in-seconds.svg';
+import WholeFoodRecipesImg from '../../public/images/icon-whole-food-recipes.svg';
+import MinimumFussImg from '../../public/images/icon-minimum-fuss.svg';
+import SearchInSecondsImg from '../../public/images/icon-search-in-seconds.svg';
 
 export default function FeaturesSection() {
     return <section className='mt-14 text-[#163A34] w-[95%] mx-auto'>
