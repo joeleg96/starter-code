@@ -1,6 +1,6 @@
-import servingsIcon from '../assets/images/icon-servings.svg';
-import prepIcon from '../assets/images/icon-prep-time.svg';
-import cookIcon from '../assets/images/icon-cook-time.svg';
+import servingsIcon from '../../public/images/icon-servings.svg';
+import prepIcon from '../../public/images/icon-prep-time.svg';
+import cookIcon from '../../public/images/icon-cook-time.svg';
 import Button from './Button';
 
 export default function RecipeItem({ recipeImg, title, description, servings, prepMinutes, cookMinutes, selectPage, selectRecipe, id, ...props}) {

@@ -1,6 +1,6 @@
 import H2 from './H2';
 import P from './P';
-import MissionImg from '../assets/images/image-about-our-mission-large.webp';
+import MissionImg from '../../public/images/image-about-our-mission-large.webp';
 
 export default function OurMission() {
     return <section className='w-[95%] mx-auto'>

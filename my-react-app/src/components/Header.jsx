@@ -1,5 +1,5 @@
-import logo from '../assets/images/logo.svg';
-import hamburger from '../assets/images/icon-hamburger-menu.svg';
+import logo from '../../public/images/logo.svg';
+import hamburger from '../../public/images/icon-hamburger-menu.svg';
 import Button from './Button';
 
 export default function Header({ toggleSideBar, selectPage }) {

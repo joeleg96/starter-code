@@ -1,5 +1,5 @@
 import P from "./P";
-import BeyondImg from '../assets/images/image-about-beyond-the-plate-large.webp';
+import BeyondImg from '../../public/images/image-about-beyond-the-plate-large.webp';
 
 export default function BeyondThePlate() {
     return <section className='mt-12'>

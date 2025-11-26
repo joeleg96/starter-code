@@ -1,6 +1,6 @@
 import Button from './Button';
-import ForkPattern from '../assets/images/pattern-fork.svg';
-import KnifePattern from '../assets/images/pattern-knife.svg';
+import ForkPattern from '../../public/images/pattern-fork.svg';
+import KnifePattern from '../../public/images/pattern-knife.svg';
 
 export default function CallToAction({selectPage}) {
     return <section className='mt-10'>
