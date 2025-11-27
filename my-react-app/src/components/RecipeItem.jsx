@@ -7,7 +7,7 @@ export default function RecipeItem({ recipeImg, title, description, servings, pr
 
     return <section>
         <div className='mt-8 border border-[#E0E6E3] bg-white rounded-xl p-2' {...props}>
-            <img className='rounded-xl' src={recipeImg} />
+            <img className='rounded-xl' src={recipeImg} />  
             <div className='mt-4 px-2'>
                 <h3 className='text-2xl text-[#163A34] font-semibold truncate mb-2'>{title}</h3>
                 <p className='text-xl text-[#163A34] line-clamp-2 lg:line-clamp-1'>{description}</p>

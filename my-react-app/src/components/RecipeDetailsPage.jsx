@@ -10,9 +10,9 @@ export default function RecipeDetailsPage({chosenRecipe, selectRecipe, selectPag
         <hr className='w-full border-[#E0E6E3] my-10'></hr>
         <div className='w-[95%] mx-auto'>
             <h2 className='text-4xl text-[#163A34] font-semibold mb-2 ml-4'>More recipes</h2>
-            <div className='lg:flex gap-2'>
+            <div className='lg:grid lg:grid-cols-3 gap-4'>
                 <RecipeItem 
-                    className='w-[95%] mx-auto mt-8 border border-[#E0E6E3] bg-white rounded-xl p-2 min-w-79'
+                    className='mx-auto mt-8 border border-[#E0E6E3] bg-white rounded-xl p-2 min-w-79'
                     key={data[(chosenRecipe+1)%8].id}
                     recipeImg={import.meta.env.BASE_URL + data[(chosenRecipe+1)%8].image.large}
                     title={data[(chosenRecipe+1)%8].title}
@@ -25,7 +25,7 @@ export default function RecipeDetailsPage({chosenRecipe, selectRecipe, selectPag
                     selectRecipe={selectRecipe}
                 />
                 <RecipeItem 
-                    className='w-[95%] mx-auto mt-8 border border-[#E0E6E3] bg-white rounded-xl p-2 min-w-79'
+                    className='mx-auto mt-8 border border-[#E0E6E3] bg-white rounded-xl p-2 min-w-79'
                     key={data[(chosenRecipe+2)%8].id}
                     recipeImg={import.meta.env.BASE_URL + data[(chosenRecipe+2)%8].image.large}
                     title={data[(chosenRecipe+2)%8].title}
@@ -38,7 +38,7 @@ export default function RecipeDetailsPage({chosenRecipe, selectRecipe, selectPag
                     selectRecipe={selectRecipe}
                 />
                 <RecipeItem 
-                    className='w-[95%] mx-auto mt-8 border border-[#E0E6E3] bg-white rounded-xl p-2 min-w-79'
+                    className='mx-auto mt-8 border border-[#E0E6E3] bg-white rounded-xl p-2 min-w-79'
                     key={data[(chosenRecipe+3)%8].id}
                     recipeImg={import.meta.env.BASE_URL + data[(chosenRecipe+3)%8].image.large}
                     title={data[(chosenRecipe+3)%8].title}
