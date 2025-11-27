@@ -6,7 +6,7 @@ import SearchInSecondsImg from '/public/images/icon-search-in-seconds.svg';
 export default function FeaturesSection() {
     return <section className='mt-14 text-[#163A34] w-[95%] mx-auto'>
         <h2 className='text-5xl font-extrabold mb-8 lg:text-center'>What you'll get</h2>
-        <div className='lg:flex lg:justify-center lg:gap-8'>
+        <div className='lg:grid lg:grid-cols-3 lg:gap-8'>
           <Feature 
             img={WholeFoodRecipesImg}
             title="Whole-food recipes"
