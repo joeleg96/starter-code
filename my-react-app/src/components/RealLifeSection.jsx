@@ -1,4 +1,4 @@
-import RealLifeImg from '../../public/images/image-home-real-life-large.webp';
+import RealLifeImg from '/images/image-home-real-life-large.webp';
 
 export default function RealLifeSection() {
     return <section>
