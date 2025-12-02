@@ -27,7 +27,7 @@ export default function Header({ toggleSideBar, selectPage }) {
             </ul>
             <div className='hidden lg:block'>
                <Button 
-                    onClick={()=>selectPage('Recipes')}
+                    onClick={()=>{selectPage('Recipes'), window.scrollTo({ top: 0, behavior: "smooth" })}}
                     >Browse recipes
                 </Button> 
             </div>

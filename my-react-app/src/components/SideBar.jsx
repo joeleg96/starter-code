@@ -21,7 +21,7 @@ export default function SideBar( {selectPage, toggleSideBar}) {
                 </li>
             </ul>
             <div className='w-full px-2 pt-6 pb-2'>
-              <Button>Browse recipes</Button>  
+              <Button onClick={()=>{selectPage('Recipes'), toggleSideBar()}}>Browse recipes</Button>  
             </div>
         </div>
     </nav>
