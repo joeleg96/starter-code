@@ -28,7 +28,7 @@ function App() {
   if(activePage === 'Home') {
     content = <HomePage selectPage={setActivePage} />;
   } else if(activePage === 'About') {
-    content = <AboutPage />;
+    content = <AboutPage selectPage={setActivePage} />;
   } else if (activePage === 'Recipes') {
     content = <RecipesPage selectPage={setActivePage} selectRecipe={handleSelectedRecipe} />;
   } else if (activePage === 'Details') {
